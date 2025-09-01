@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Limon Tours | Explore the Caribbean</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+  
+</head>
+
+<body class="bg-gradient-to-b from-teal-100 to-yellow-50">
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="assets/Limon (1)/Limon__1_-1-removebg-preview.png"
+                    alt="Adventure Tours logo featuring mountain and sun silhouette" class="h-10 w-10 mr-2">
+                <h1 class="text-xl font-bold text-teal-600">Limon Tours</h1>
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#home" class="text-gray-700 hover:text-teal-600 transition">Home</a>
+                <a href="#tours" class="text-gray-700 hover:text-teal-600 transition">Tours</a>
+                <a href="#bookingForm" class="text-gray-700 hover:text-teal-600 transition">Book Now</a>
+                <a href="#contact" class="text-gray-700 hover:text-teal-600 transition">Contact</a>
+            </nav>
+            <button id="menuToggle" class="md:hidden text-gray-700">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+        <!-- Mobile nav -->
+        <nav id="mobileMenu" class="md:hidden hidden px-4 pb-4">
+            <a href="#home" class="block text-gray-700 py-2 hover:text-teal-600">Home</a>
+            <a href="#tours" class="block text-gray-700 py-2 hover:text-teal-600">Tours</a>
+            <a href="#bookingForm" class="block text-gray-700 py-2 hover:text-teal-600">Book Now</a>
+            <a href="#contact" class="block text-gray-700 py-2 hover:text-teal-600">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="bg-gradient-to-b from-teal-500 to-cyan-400 text-white py-20">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6">Discover the Caribbean's Hidden Gems</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Experience turquoise waters, lush rainforests and unforgettable
+                culture. Your dream tour starts here!</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#tours"
+                    class="bg-white text-teal-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">Explore
+                    Tours</a>
+                <a href="#bookingForm"
+                    class="bg-transparent border-2 border-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-teal-600 transition">Book
+                    Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tours Gallery Section -->
+    <section id="tours" class="py-16 bg-white/90 backdrop-blur-sm px-4 sm:px-6 lg:px-8">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Featured Tours</h2>
+
+            <div class="flex justify-center mb-8 border-b border-gray-200">
+                <button class="px-4 py-2 active-tab mx-2">All Tours</button>
+                <button class="px-4 py-2 mx-2">Adventure</button>
+                <button class="px-4 py-2 mx-2">Cultural</button>
+                <button class="px-4 py-2 mx-2">Luxury</button>
+                <button class="px-4 py-2 mx-2">Family</button>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Tour Card 1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg tour-card relative">
+                    <div class="relative h-64">
+                        <img src="assets/IMG_20240815_110700.jpg"
+                            alt="Mountain trekking tour with group hiking through alpine meadows with snow-capped peaks in background"
+                            class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
+                        <div class="absolute bottom-4 left-4">
+                            <span class="bg-blue-600 text-white px-3 py-1 rounded-full text-sm">Adventure</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-gray-800">Mountain Trekking Expedition</h3>
+                        <p class="text-gray-600 mb-4">5-day adventure through breathtaking alpine landscapes with
+                            experienced guides.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-gray-800">$450</span>
+                            <a href="#bookingForm" class="text-blue-600 font-semibold hover:underline">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tour Card 2 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg tour-card relative">
+                    <div class="relative h-64">
+                        <img src="img/Tortuguero/Imagen de WhatsApp 2025-08-01 a las 12.07.28_08ae67de.jpg"
+                            alt="Sunset boat tour showing luxury yacht sailing past ancient coastal ruins"
+                            class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
+                        <div class="absolute bottom-4 left-4">
+                            <span class="bg-green-600 text-white px-3 py-1 rounded-full text-sm">Cultural</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-gray-800">Tortuguero Canal</h3>
+                        <p class="text-gray-600 mb-4">Tortuguero canal + rain forest walking trail</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-gray-800">$99</span>
+                            <a href="#bookingForm" class="text-blue-600 font-semibold hover:underline">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tour Card 3 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg tour-card relative">
+                    <div class="relative h-64">
+                        <img src="img/Cahuita/Imagen de WhatsApp 2025-08-01 a las 12.05.06_e20eb83f.jpg"
+                            alt="Luxury safari tour showcasing jeeps observing elephants at sunset in African savanna"
+                            class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
+                        <div class="absolute bottom-4 left-4">
+                            <span class="bg-yellow-600 text-white px-3 py-1 rounded-full text-sm">Luxury</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-gray-800">Hike Experience</h3>
+                        <p class="text-gray-600 mb-4">Cahuita National Park adventure hike</p>
+                        <span>From Puerto Limon</span>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-gray-800">$75</span>
+                            <a href="#bookingForm" class="text-blue-600 font-semibold hover:underline">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <button class="bg-gray-200 hover:bg-gray-300 px-6 py-3 rounded-lg font-semibold transition">View All
+                    Tours</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Form Section -->
+    <section id="bookingForm" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-md overflow-hidden">
+                <div class="md:flex">
+                    <div class="md:w-1/2 p-8 bg-blue-600 text-white">
+                        <h2 class="text-3xl font-bold mb-6">Book Your Tour</h2>
+                        <p class="mb-8">Fill out the form to reserve your spots on your dream adventure. Our team will
+                            confirm your booking within 24 hours.</p>
+                        <div class="mb-6">
+                            <h3 class="text-xl font-semibold mb-3">Need Help?</h3>
+                            <p class="mb-2">Call us at: <span class="font-semibold">+506 8716 2857</span></p>
+                            <p>Email: <span class="font-semibold">tours.limon.cr@gmail.com</span></p>
+                        </div>
+                        <div class="border-t border-white/20 pt-6">
+                            <h3 class="text-xl font-semibold mb-3">Cancellation Policy</h3>
+                            <p>Free cancellation up to 14 days before your tour. 50% refund for cancellations within
+                                14-7 days. No refunds within 7 days.</p>
+                        </div>
+                    </div>
+
+                    <div class="md:w-1/2 p-8">
+                        <form id="tourBookingForm">
+                            <div class="mb-6">
+                                <label for="name" class="block text-gray-700 font-semibold mb-2">Your Name</label>
+                                <input type="text" id="name" name="name" required
+                                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600">
+                            </div>
+
+                            <div class="mb-6">
+                                <label for="email" class="block text-gray-700 font-semibold mb-2">Your Email</label>
+                                <input type="email" id="email" name="email" required
+                                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600">
+                            </div>
+                            <div class="mb-6">
+                                <label for="tourSelect" class="block text-gray-700 font-semibold mb-2">Select
+                                    Tour</label>
+                                <select id="tourSelect"
+                                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600">
+                                    <option value="">-- Select a tour --</option>
+                                    <option value="mountain">Mountain Trekking Expedition ($450)</option>
+                                    <option value="coastal">Tortuguero Canal ($99)</option>
+                                    <option value="safari">Cahuita National Park ($75)</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-6">
+                                <label class="block text-gray-700 font-semibold mb-2">Participants</label>
+
+                                <div class="mb-4">
+                                    <label for="adults" class="block text-gray-600 mb-1">Adults (18+)</label>
+                                    <input type="number" id="adults" min="1" max="10" value="1"
+                                        class="w-full px-4 py-2 border border-gray-300 rounded-lg">
+                                </div>
+
+                                <div class="mb-4">
+                                    <label for="children" class="block text-gray-600 mb-1">Children (4-17)</label>
+                                    <input type="number" id="children" min="0" max="10" value="0"
+                                        class="w-full px-4 py-2 border border-gray-300 rounded-lg">
+                                </div>
+
+                                <div class="mb-4">
+                                    <label for="infants" class="block text-gray-600 mb-1">Infants (0-3)</label>
+                                    <input type="number" id="infants" min="0" max="5" value="0"
+                                        class="w-full px-4 py-2 border border-gray-300 rounded-lg">
+                                </div>
+                            </div>
+
+                            <div class="mb-6">
+                                <label class="block text-gray-700 font-semibold mb-2">Date</label>
+                                <input type="date"
+                                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600">
+                            </div>
+
+                            <div class="mb-6">
+                                <label class="block text-gray-700 font-semibold mb-2">Additional Options</label>
+
+                                <div class="flex items-center mb-2">
+                                    <input type="checkbox" id="foodOption" class="mr-2 h-5 w-5 text-blue-600">
+                                    <label for="foodOption" class="text-gray-600">Include meals ($25/person/day)</label>
+                                </div>
+
+                                <div class="flex items-center mb-2">
+                                    <input type="checkbox" id="transportOption" class="mr-2 h-5 w-5 text-blue-600">
+                                    <label for="transportOption" class="text-gray-600">Include transportation
+                                        ($50/person round trip)</label>
+                                </div>
+
+
+                            </div>
+
+                            <div class="mb-6">
+                                <label for="specialRequests" class="block text-gray-700 font-semibold mb-2">Special
+                                    Requests</label>
+                                <textarea id="specialRequests" rows="3"
+                                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
+                                    placeholder="Dietary restrictions, accessibility needs, etc."></textarea>
+                            </div>
+
+                            <button type="submit"
+                                class="w-full bg-blue-600 text-white font-semibold py-3 rounded-lg hover:bg-blue-700 transition">Submit
+                                Booking Request</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Tour Information Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">More Information</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-100 p-6 rounded-lg">
+                    <div class="text-blue-600 mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-800">Trusted Guides</h3>
+                    <p class="text-gray-600">All our tours are led by certified professionals with extensive local
+                        knowledge.</p>
+                </div>
+
+                <div class="bg-gray-100 p-6 rounded-lg">
+                    <div class="text-blue-600 mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-800">Best Value</h3>
+                    <p class="text-gray-600">We offer competitive prices without compromising on quality or safety.</p>
+                </div>
+
+                <div class="bg-gray-100 p-6 rounded-lg">
+                    <div class="text-blue-600 mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-800">Sustainable Tourism</h3>
+                    <p class="text-gray-600">We prioritize eco-friendly practices and support local communities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-16 bg-blue-600 text-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">What Our Customers Say</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white/10 p-8 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/4dd379f3-3146-4b93-8a1d-709a31c7d49b.png"
+                            alt="Portrait of happy female customer Sarah Johnson"
+                            class="h-12 w-12 rounded-full object-cover mr-4">
+                        <div>
+                            <h4 class="font-semibold">Sarah Johnson</h4>
+                            <p class="text-sm text-blue-100">Mountain Trekking Expedition</p>
+                        </div>
+                    </div>
+                    <p>"The views were absolutely breathtaking and our guide was incredibly knowledgeable. Couldn't have
+                        asked for a better experience!"</p>
+                </div>
+
+                <div class="bg-white/10 p-8 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/90c6f6dd-5d28-411b-9411-4631b2fdee4a.png"
+                            alt="Portrait of satisfied male customer Michael Chen"
+                            class="h-12 w-12 rounded-full object-cover mr-4">
+                        <div>
+                            <h4 class="font-semibold">Michael Chen</h4>
+                            <p class="text-sm text-blue-100">Premium Safari Experience</p>
+                        </div>
+                    </div>
+                    <p>"Worth every penny! Saw the Big Five and stayed in the most luxurious tented camp. The attention
+                        to detail was impeccable."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Contact Us</h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4 text-gray-800">Get In Touch</h3>
+                        <p class="text-gray-600 mb-6">Have questions about our tours? Need help with your booking?
+                            Contact our friendly team.</p>
+
+                        <div class="mb-4">
+                            <p class="font-semibold text-gray-800">Email</p>
+                            <p class="text-gray-600">info@adventuretours.com</p>
+                        </div>
+
+                        <div class="mb-4">
+                            <p class="font-semibold text-gray-800">Phone</p>
+                            <p class="text-gray-600">+1 (555) 123-4567</p>
+                        </div>
+
+                        <div class="mb-4">
+                            <p class="font-semibold text-gray-800">Address</p>
+                            <p class="text-gray-600">123 Adventure Lane, Mountain View, CA 94041</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <form class="space-y-4">
+                            <div>
+                                <label for="name" class="block text-gray-700 font-semibold mb-1">Name</label>
+                                <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg">
+                            </div>
+
+                            <div>
+                                <label for="email" class="block text-gray-700 font-semibold mb-1">Email</label>
+                                <input type="email" id="email"
+                                    class="w-full px-4 py-2 border border-gray-300 rounded-lg">
+                            </div>
+
+                            <div>
+                                <label for="message" class="block text-gray-700 font-semibold mb-1">Message</label>
+                                <textarea id="message" rows="4"
+                                    class="w-full px-4 py-2 border border-gray-300 rounded-lg"></textarea>
+                            </div>
+
+                            <button type="submit"
+                                class="bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-blue-700 transition">Send
+                                Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-teal-700 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8">
+                <!-- Footer contenido -->
+            </div>
+            <div class="border-t border-teal-400 pt-8 text-center text-teal-100">
+                <p>© 2025 Limon Adventure. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        document.getElementById("menuToggle").addEventListener("click", function () {
+            const menu = document.getElementById("mobileMenu");
+            menu.classList.toggle("hidden");
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+        // Espera a que cargue todo el DOM
+        document.addEventListener('DOMContentLoaded', function () {
+            emailjs.init("r33NY2AIzOcDM5QQv"); // <-- reemplaza con tu verdadero User ID (público)
+        });
+    </script>
+
+
+</body>
+
+</html>
